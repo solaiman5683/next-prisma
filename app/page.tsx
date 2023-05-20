@@ -1,5 +1,5 @@
 const getPost = async () : Promise<any> => {
-	const res = await fetch('/api/getPosts');
+	const res = await fetch('http://localhost:3000/api/getPosts');
 	const post = await res.json();
 	return post;
 };
